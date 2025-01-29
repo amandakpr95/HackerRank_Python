@@ -11,7 +11,7 @@ import random
 import re
 import sys
 
-n = int(input())                        # define n as an integer (int) inputted (input())
+n = int(input())                        # reads an integer "int()" input "input()" (a number in this case) and stores it as n
 if n % 2 != 0:                          # when n is divided by 2, if the remainder (%) is not (!=) 0 (i.e. n is odd), then:
     print("Weird")                      # print "Weird"
 if n % 2 == 0 and n >= 2 and n <= 5:    # when n is divided by 2, if the remainder (%) is (==) 0 (i.e. n is even), and n is between 2 and 5 then:
@@ -27,8 +27,8 @@ if n % 2 == 0 and n > 20:               # when n is divided by 2, if the remaind
   The second line contains the difference of the two numbers (first - second).
   The third line contains the product of the two numbers.
 
-a = int(input())                        # define a as an integer (int) inputted (input())
-b = int(input())                        # define b as an integer (int) inputted (input())
+a = int(input())                        # reads an integer "int()" input "input()" (a number in this case) and stores it as a
+b = int(input())                        # reads an integer "int()" input "input()" (a number in this case) and stores it as b
 
 print(a + b)                            # print the sum of a and b
 print(a - b)                            # print the difference of a and b
@@ -39,8 +39,8 @@ print(a * b)                            # print the product of a and b
 Add logic to print two lines. The first line should contain the result of integer division,  // . The second line should contain the result of float division,  / .
 No rounding or formatting is necessary.
 
-a = int(input())                        # define a as an integer (int) inputted (input())
-b = int(input())                        # define b as an integer (int) inputted (input())
+a = int(input())                        # reads an integer "int()" input "input()" (a number in this case) and stores it as a
+b = int(input())                        # reads an integer "int()" input "input()" (a number in this case) and stores it as b
 
 print(a // b)                           # print the result of integer division (//)
 print(a / b)                            # print the result of float division (/)
@@ -48,7 +48,7 @@ print(a / b)                            # print the result of float division (/)
 # Loops
 ## The provided code stub reads an integer, n, from STDIN. For all non-negative integers i < n, print i^2.
 
-n = int(input())                        # define n as an integer (int) inputted (input())
+n = int(input())                        # reads an integer "int()" input "input()" (a number in this case) and stores it as n
 
 for i in range(n):                      # for each integer (i) in the range (n):
     print(i**2)                         # print i^2
@@ -74,14 +74,14 @@ def is_leap(year):                      # defines the function "is_leap" with th
         leap = False                    # the function returns False.
     return leap                         # leap has been defined as True or False in all our If/Elif/Else statements, so this returns the proper Boolean
 
-year = int(input())                      # define year as an integer (int) inputted (input())
+year = int(input())                      # reads an integer "int()" input "input()" (a year in this case) and stores it as year
 print(is_leap(year))                     # prints a Boolean (True or False) for the year provided: True if year is a leap, False if year is not a leap.
 
 # Print a Function
 ## The included code stub will read an integer, n, from STDIN. Without using any string methods, try to print the following: 123...n
 Note that "..." represents the consecutive values in between.
 
-n = int(input())                        # define n as an integer (int) inputted (input())
+n = int(input())                        # reads an integer "int()" input "input()" (a number in this case) and stores it as n
     
 for i in range (1, n+1):                # for each integer (i) in the range (1, n+1) (the +1 is necessary to include n):
     print(i, end="")                    # print i (which has already been defined as the range from 1 to n. end="" ensures that it prints with no spaces and no new lines. 
