@@ -1,8 +1,12 @@
 # If-Else
 Given an integer, n, perform the following conditional actions:
+
 If n is odd, print Weird
+
 If n is even and in the inclusive range of 2 to 5, print Not Weird
+
 If n is even and in the inclusive range of 6 to 20, print Weird
+
 If n is even and greater than 20, print Not Weird
 
 ```python 3
@@ -20,9 +24,13 @@ if n % 2 == 0 and n > 20:               # when n is divided by 2, if the remaind
 ---
 # Arithmetic Operators
 The provided code stub reads two integers from STDIN, a and b. Add code to print three lines where:
+
   The first line contains the sum of the two numbers.
+  
   The second line contains the difference of the two numbers (first - second).
+  
   The third line contains the product of the two numbers.
+  
 
 ```python 3
 a = int(input())                        # reads an integer "int()" input "input()" and stores it as a
@@ -36,7 +44,9 @@ print(a * b)                            # print the product of "a" and "b"
 ---
 # Division
 The provided code stub reads two integers, a and b, from STDIN. 
+
 Add logic to print two lines. The first line should contain the result of integer division,  // . The second line should contain the result of float division,  / .
+
 No rounding or formatting is necessary.
 
 ```python 3
@@ -61,12 +71,16 @@ for i in range(n):                      # for each integer "i" in the range "0-n
 ---
 # Write a Function
 An extra day is added to the calendar almost every four years as February 29, and the day is called a leap day. It corrects the calendar for the fact that our planet takes approximately 365.25 days to orbit the sun. A leap year contains a leap day.
+
 In the Gregorian calendar, three conditions are used to identify leap years:
-  The year can be evenly divided by 4, is a leap year, unless:
-  The year can be evenly divided by 100, it is NOT a leap year, unless:
-  The year is also evenly divisible by 400. Then it is a leap year.
+  1. The year can be evenly divided by 4, is a leap year, unless:
+  2. The year can be evenly divided by 100, it is NOT a leap year, unless:
+  3. The year is also evenly divisible by 400. Then it is a leap year.
+
 This means that in the Gregorian calendar, the years 2000 and 2400 are leap years, while 1800, 1900, 2100, 2200, 2300 and 2500 are NOT leap years.
+
 Given a year, determine whether it is a leap year. If it is a leap year, return the Boolean True, otherwise return False.
+
 Note that the code stub provided reads from STDIN and passes arguments to the is_leap function. It is only necessary to complete the is_leap function.
 
 ```python 3
@@ -88,6 +102,7 @@ print(is_leap(year))                     # prints a Boolean (True or False) for 
 ---
 # Print a Function
 The included code stub will read an integer, n, from STDIN. Without using any string methods, try to print the following: 123...n
+
 Note that "..." represents the consecutive values in between.
 
 ```python 3
