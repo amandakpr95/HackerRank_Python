@@ -7,6 +7,7 @@ Consider a list (list = []). You can perform the following commands:
   5. sort: Sort the list.
   6. pop: Pop the last element from the list.
   7. reverse: Reverse the list.
+
 Initialize your list and read in the value of n followed by n lines of commands where each command will be of the 7 types listed above. 
 Iterate through each command in order and perform the corresponding operation on your list.
 
@@ -40,7 +41,9 @@ for _ in range (n):                     # for all items the range n
 ---
 # List Comprehensions
 Let's learn about list comprehensions! You are given three integers x, y and z representing the dimensions of a cuboid along with an integer n. 
+
 Print a list of all possible coordinates given by (i, j, k) on a 3D grid where the sum of i + j + k is not equal to n. 
+
 Here, 0 <= i <= x; 0 <= j <= y; 0 <= k <= z. Please use list comprehensions rather than multiple loops, as a learning exercise.
 
 ```python 3
@@ -63,6 +66,7 @@ print(coordinates)                      # prints coordinates
 ---
 # Find the Runner-Up Score!
 Given the participants' score sheet for your University Sports Day, you are required to find the runner-up score. 
+
 You are given n scores. Store them in a list and find the score of the runner-up.
 
 ```python 3
@@ -77,6 +81,7 @@ print(scores[1])                        # prints the second position (i.e. index
 ---
 # Nested Lists
 Given the names and grades for each student in a class of N students, store them in a nested list and print the name(s) of any student(s) having the second lowest grade.
+
 Note: If there are multiple students with the second lowest grade, order their names alphabetically and print each name on a new line.
 
 ```python 3
@@ -101,6 +106,7 @@ for student in sorted(second_lowest_students):                    # goes through
 ---
 # Find the Percentage
 The provided code stub will read in a dictionary containing key/value pairs of name:[marks] for a list of students. 
+
 Print the average of the marks array for the student name provided, showing 2 places after the decimal.
 
 ```python 3
@@ -123,10 +129,12 @@ print(f"{average:.2f}")                 # formats the average into a string with
 ---
 # Tuples
 Given an integer, n, and n space-separated integers as input, create a tuple, t, of those n integers. Then compute and print the result of hash(t).
+
 Note: hash() is one of the functions in the __builtins__ module, so it need not be imported.
+
 Note: this needs to be run on Python 2, not Python 3, as the hash function changes in Python 3. 
 
-```python 3
+```python 2
 n = int(raw_input())                            # reads an integer "int()" from the input "raw_input()" and stores it as "n".
 integer_list = map(int, raw_input().split())    # splits the elements of the input string by spaces "raw_input().split()", converts the elements to integers "map(int, ... )", and stores it as "integer_list"
 t = tuple(integer_list)                         # converts the "integer_list" to a tuple and stores it as "t"
